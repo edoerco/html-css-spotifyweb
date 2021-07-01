@@ -5,6 +5,10 @@
 }
 
 /* common */
+a {
+    text-decoration: none;
+}
+
 aside {
     height: 100%;
     width: 250px;
@@ -27,12 +31,58 @@ footer {
     height: calc(100vh - 150px);
 }
 
+.flex {
+    display: flex;
+}
+
 .clearfix {
     content: "";
     display: table;
     clear: both;
 }
 /* fine common  */
+
+/* navigazione */
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info {
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 100%;
+    height: 100px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+}
+
+.playlist {
+    width: 100%;
+    height: 100px;
+}
+
+.account {
+    height: 20%;
+}
+/* fine navigazione */
+
+/* corpo */
+/* fine corpo */
+
+/* footer */
+/* fine footer */
 
 /* debug */
 .debug .wrapper {
@@ -50,4 +100,20 @@ footer {
 .debug footer {
     background-color: lightpink;
 }
+
+.debug .row {
+    background-color: yellow;
+}
+
+.debug .info,
+.debug .account {
+    border: 2px solid red;
+}
+
+.debug #logo,
+.debug nav, 
+.debug .playlist {
+    border: 1px solid black;
+}
+
 
