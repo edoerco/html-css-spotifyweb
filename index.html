@@ -6,79 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
-<body class="">
+<body class="debug">
     
     <div class="wrapper clearfix">
         <!-- navigazione -->
-        <aside>
-            <div class="row flex">
-                <div class="info flex">
-                    <!-- logo -->
-                    <div id="logo">
-                        <img src="img/logo.svg" alt="logo">
-                    </div>
+        <aside class="row flex">
+            <div class="info flex">
+                <!-- logo -->
+                <div id="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
 
-                    <!-- cerca -->
-                    <nav class="flex">
-                        <a class="flex" href="#">
-                            <div class="item">
-                                <img src="img/home.svg" alt="home">                           
-                            </div>
-                            <span>Home</span>
-                        </a>
-                        <a class="flex" href="#">
-                            <div class="item">
-                                <img src="img/search.svg" alt="cerca">
-                            </div>
-                            <span>Cerca</span>
-                        </a>
-                        <a class="flex" href="#">
-                            <div class="item">
-                                <img src="img/libreria.svg" alt="libreria">
-                            </div>
-                            <span>La tua libreria</span>
-                        </a>
-                        
-                    </nav>
+                <!-- cerca -->
+                <nav class="flex">
+                    <a class="flex" href="#">
+                        <div class="item">
+                            <img src="img/home.svg" alt="home">                           
+                        </div>
+                        <span>Home</span>
+                    </a>
+                    <a class="flex" href="#">
+                        <div class="item">
+                            <img src="img/search.svg" alt="cerca">
+                        </div>
+                        <span>Cerca</span>
+                    </a>
+                    <a class="flex" href="#">
+                        <div class="item">
+                            <img src="img/libreria.svg" alt="libreria">
+                        </div>
+                        <span>La tua libreria</span>
+                    </a>
+                    
+                </nav>
 
-                    <!-- playlist -->
-                    <div class="playlist flex">
+                <!-- playlist -->
+                <div class="playlist flex">
+                    <div class="new-playlist">
                         <h4>PLAYLIST</h4>
                         <a href="#">
                             <span> + </span>
                             <span>Crea Playlist</span>
                         </a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
+                    </div>
+                    <div class="user-playlist flex">
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
                     </div>
                 </div>
-                <!-- utente -->
-                <div class="account">
-                    <a href="#">
-                        <div class="download flex">
-                            <img src="img/download.svg" alt="download">
-                            <span>Installa app</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="#">
-                        <div class="utente flex">
-                            <img src="img/profile.svg" alt="utente">
-                            <h4>John Doe</h4>
-                        </div>
-                    </a>
-                </div>              
             </div>
+            <!-- utente -->
+            <div class="account flex">
+                <a href="#">
+                    <div class="download flex">
+                        <img src="img/download.svg" alt="download">
+                        <span>Installa app</span>
+                    </div>
+                </a>
+                <hr>
+                <a href="#">
+                    <div class="utente flex">
+                        <img src="img/profile.svg" alt="utente">
+                        <h4>John Doe</h4>
+                    </div>
+                </a>
+            </div>              
         </aside>
         <!-- fine navigazione -->
 

@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
 }
 
 /* common */
@@ -20,13 +19,13 @@ h4 {
 
 aside {
     height: 100%;
-    width: 15%;
+    width: 200px;
     float: left;
 }
 
 main {
     height: 100%;
-    width: calc(100% - 15%);
+    width: calc(100% - 200px);
     float: left;
     overflow-y: scroll;
     background-color: #141922;
@@ -36,6 +35,8 @@ footer {
     height: 100px;
     width: 100%;
     background-color: #282828;
+    position: fixed;
+    bottom: 0;
 }
 
 .wrapper {
@@ -56,7 +57,6 @@ footer {
 
 /* navigazione */
 .row {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
@@ -65,27 +65,27 @@ footer {
 }
 
 .info {
-    height: 60%;
+    height: calc(100% - 80px);
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 20px;
+    overflow-y: hidden;
 }
 
 /* logo */
 #logo img {
     width: 85%;
+    margin-top: 20px;
 }
 /* fine logo */
 
 /* cerca */
 nav {
-    height: 20%;
     flex-direction: column;
-    justify-content: space-between;
+    margin: 20px 0;
 }
 
 nav a {
     align-items: center;
+    line-height: 30px;
 }
 
 nav a span {
@@ -94,42 +94,54 @@ nav a span {
 }
 
 .item {
-    width: 15%;
+    width: 40px;
 }
 /* fine cerca */
 
 /* playlist */
 .playlist {
     flex-direction: column;
-    justify-content: space-between;
-    height: 60%;
+    overflow: hidden;
 }
 
 .playlist span {
     display: inline-block;
     height: 20px;
     font-size: 18px;
-    font-weight: 550;
+    font-weight: 500;
     color: #a3a3a3;
 }
 
 .playlist a span:first-child {
-    padding: 16px 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
     background-color: #a3a3a3;
     color: black;
-    line-height: 0;
     font-size: 25px;
     font-weight: 800;
 }
 
+.new-playlist h4 {
+    margin-bottom: 10px;
+}
+
+.user-playlist {
+    flex-direction: column;
+}
+
 .playlist a {
     color: #a3a3a3;
+    line-height: 30px;
 }
 /* fine playlist */
 
 /* utente */
 .account {
-    height: 10%;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .download img {
@@ -165,7 +177,7 @@ hr {
 
 /* corpo */
 .upgrade {
-    width: calc(100% - 15%);
+    width: calc(100% - 200px);
     height: 100px;
     justify-content: flex-end;
     align-items: center;
@@ -182,12 +194,11 @@ hr {
     margin-right: 20px;
 }
 
-.container {
+/* .container {
     width: calc(100% - 20px);
     height: 100%;
     margin: 100px 10px 5px;
-
-}
+} */
 
 .row-container {
     width: 60%;
