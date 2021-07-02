@@ -194,22 +194,22 @@ hr {
     margin-right: 20px;
 }
 
-/* .container {
-    width: calc(100% - 20px);
+.container {
+    width: 100%;
     height: 100%;
-    margin: 100px 10px 5px;
-} */
+    margin: 100px auto 5px;
+} 
 
-.row-container {
-    width: 60%;
-    margin: 0 auto;
+.menu-esplora {
+    width: 100%;
     height: 20px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.row-container a {
+.menu-esplora a {
     width: 50px;
     height: 20px;
+    margin: 0 15px;
 }
 /* fine corpo */
 
@@ -256,8 +256,8 @@ hr {
     background-color: rgb(192, 250, 192);
 }
 
-.debug .row-container,
-.debug .row-container a,
+.debug .menu-esplora,
+.debug .menu-esplora a,
 .debug nav a  {
     border: 1px solid black;
 }
