@@ -68,6 +68,7 @@ footer {
     height: calc(100% - 80px);
     flex-direction: column;
     overflow-y: hidden;
+    min-height: 400px;
 }
 
 /* logo */
@@ -81,6 +82,7 @@ footer {
 nav {
     flex-direction: column;
     margin: 20px 0;
+    overflow: hidden;
 }
 
 nav a {
@@ -129,11 +131,15 @@ nav a span {
 
 .user-playlist {
     flex-direction: column;
+    overflow: auto;
+}
+
+.user-playlist a {
+    line-height: 35px;
 }
 
 .playlist a {
     color: #a3a3a3;
-    line-height: 30px;
 }
 /* fine playlist */
 
