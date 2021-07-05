@@ -71,6 +71,10 @@ footer {
     min-height: 400px;
 }
 
+.row a {
+    font-weight: 700;
+}
+
 /* logo */
 #logo img {
     width: 85%;
@@ -93,10 +97,13 @@ nav a {
 nav a span {
     color: white;
     margin-left: 10px;
+    font-size: 14px;
+    color: #7d7f84;
 }
 
 .item {
-    width: 40px;
+    width: 25px;
+    color: #7d7f84;
 }
 /* fine cerca */
 
@@ -132,10 +139,12 @@ nav a span {
 .user-playlist {
     flex-direction: column;
     overflow: auto;
+    margin-top: 10px;
 }
 
 .user-playlist a {
     line-height: 35px;
+    font-size: 12px;
 }
 
 .playlist a {
@@ -169,6 +178,7 @@ nav a span {
 .download span {
     color: #a3a3a3;
     margin-left: 10px;
+    font-size: 12px;
 }
 
 hr {
@@ -204,19 +214,68 @@ hr {
     width: 100%;
     height: 100%;
     margin: 100px auto 5px;
+    padding: 20px;
 } 
 
 .menu-esplora {
     width: 100%;
     height: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu-esplora a {
-    width: 50px;
-    height: 20px;
     margin: 0 15px;
+    color: #7d7f84;
 }
+/* songs */
+.container-title {
+    margin: 20px 0;
+    line-height: 35px;
+}
+
+h2 {
+    color: white;
+    font-weight: 700;
+}
+
+.container-songs {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.song {
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.song-img {
+    width: 100%;
+}
+
+.song-img img {
+    width: 100%;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.song-text {
+    text-align: center;
+}
+
+.song-text h4 {
+    margin: 10px 0;
+}
+
+.container span {
+    font-size: 12px;
+    color: #7d7f84;
+    font-weight: 700;
+}
+/* fine songs */
 /* fine corpo */
 
 /* footer */
@@ -268,5 +327,12 @@ hr {
     border: 1px solid black;
 }
 
+.debug .container-songs {
+    border: 1px solid yellow;
+}
+
+.debug .song {
+    background-color: orange;
+}
 
 
