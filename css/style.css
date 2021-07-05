@@ -37,6 +37,7 @@ footer {
     background-color: #282828;
     position: fixed;
     bottom: 0;
+    justify-content: space-between;
 }
 
 .wrapper {
@@ -91,13 +92,12 @@ nav {
 
 nav a {
     align-items: center;
-    line-height: 30px;
 }
 
 nav a span {
     color: white;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: #7d7f84;
 }
 
@@ -116,7 +116,6 @@ nav a span {
 .playlist span {
     display: inline-block;
     height: 20px;
-    font-size: 18px;
     font-weight: 500;
     color: #a3a3a3;
 }
@@ -188,6 +187,12 @@ hr {
 .utente h4 {
     margin-left: 10px;
 }
+
+aside a:hover,
+aside span:hover {
+    color: white;
+    cursor: pointer;
+}
 /* fine utente */
 /* fine navigazione */
 
@@ -203,11 +208,18 @@ hr {
 }
 
 .upgrade a {
+    font-size: 12px;
+    font-weight: 700;
     padding: 10px 40px;
     border: 1px solid white;
     border-radius: 20px;
     color: white;
     margin-right: 20px;
+}
+
+.upgrade a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .container {
@@ -227,10 +239,12 @@ hr {
 .menu-esplora a {
     margin: 0 15px;
     color: #7d7f84;
+    font-weight: 700;
+    font-size: 12px;
 }
 /* songs */
 .container-title {
-    margin: 20px 0;
+    margin: 30px 0 20px;
     line-height: 35px;
 }
 
@@ -245,12 +259,13 @@ h2 {
 }
 
 .song {
-    width: calc(100% / 6 - 10px);
-    margin-right: 10px;
+    width: calc(100% / 6 - 20px);
+    margin-right: 20px;
     cursor: pointer;
 }
 
 .song-img {
+    position: relative;
     width: 100%;
 }
 
@@ -258,7 +273,7 @@ h2 {
     width: 100%;
 }
 
-.circle {
+.tondo {
     border-radius: 50%;
 }
 
@@ -267,7 +282,7 @@ h2 {
 }
 
 .song-text h4 {
-    margin: 10px 0;
+    margin: 10px 0 ;
 }
 
 .container span {
@@ -275,10 +290,200 @@ h2 {
     color: #7d7f84;
     font-weight: 700;
 }
+
+.song-img .far {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    display: none;
+} 
+
+.song-img:hover img {
+    opacity: 0.5;
+}
+
+.song-img:hover i {
+    display: block;
+}
+
+main a:hover,
+main span:hover {
+    color: white;
+    cursor: pointer;
+}
 /* fine songs */
 /* fine corpo */
 
 /* footer */
+.col-lat {
+    margin: 0 20px;
+}
+footer .col-centrale {
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Footer sinistra */
+footer .now-playing {
+    align-items: center;
+}
+
+footer .now-actions {
+    margin-left: 30px;
+    color: white;
+    justify-content: center;
+}
+
+footer .col-lat i {
+    color: white;
+    opacity: 0.6;
+    padding: 5px;
+}
+
+footer .col-lat i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+footer .now-txt {
+    padding-left: 10px;
+}
+
+footer .now-playing .now-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer .now-playing .now-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.now-playing .now-artist {
+    color: grey;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+footer .now-playing .now-artist:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+footer .now-playing img {
+    width: 50px;
+    cursor: pointer;
+}
+/* Fine Footer sinistra */
+
+/* Footer centrale */
+.player-cmd {
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.player-cmd i {
+    margin: 0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.player-cmd .play {
+    font-size: 34px;
+}
+
+.player-cmd .play:hover {
+    transform: scale(1.1);
+}
+
+.progression {
+    margin-top: 10px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.progression .time {
+    color: white;
+    font-size: 10px;
+    margin: 0px 10px;
+}
+
+.col-centrale .progress-bar {
+    width: 80%;
+    min-width: 150px;
+    height: 4px;
+    background-color: grey;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loading {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+.progress-bar:hover .loading {
+    background-color: limegreen;
+}
+
+.circle {
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: white;
+}
+
+.progress-bar:hover .circle {
+    display: block;
+}
+/* Fine footer centrale */
+/* Footer destro */
+#col-right.col-lat {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#col-right .progression {
+    margin-top: 0px;
+    width: 150px;
+    min-width: 100px
+}
+
+#col-right .progress-bar {
+    width: 80%;
+    height: 4px;
+    background-color: grey;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#col-right .responsive-more {
+    display: none;
+}
+/* Fine footer destro */
+/* FINE FOOTER */
+
 /* fine footer */
 
 /* debug */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -107,6 +108,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/metal_lifting.jpg" alt="metal">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Heavy Metal</h4>
@@ -117,6 +119,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/stranger.jpeg" alt="stranger">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
@@ -127,6 +130,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/aquietplace.jpeg" alt="quiet">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>A quiet place</h4>
@@ -137,6 +141,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/split.jpeg" alt="split">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Split</h4>
@@ -147,6 +152,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/cure.jpeg" alt="cure">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>A cure for wellness</h4>
@@ -157,6 +163,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/sinister.jpeg" alt="sinister">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Sinister</h4>
@@ -166,7 +173,7 @@
                 </div>
 
                 <div class="container-title">
-                    <h2>reato per John Doe</h2>
+                    <h2>Creato per John Doe</h2>
                     <span>Più ascolti, più accurati saranno i suggerimenti</span>
                 </div>
                 <div class="container-songs flex">
@@ -174,6 +181,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/radar.jpeg" alt="release">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Release Radar</h4>
@@ -183,6 +191,7 @@
                     <div class="song">
                         <div class="song-img">
                             <img src="img/mixdaily.jpeg" alt="mix daily">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Daily Mix 1</h4>
@@ -198,7 +207,8 @@
                     <!-- song 1 -->
                     <div class="song">
                         <div class="song-img">
-                            <img class="circle" src="img/sinister.jpeg" alt="lana del rey">
+                            <img class="tondo" src="img/sinister.jpeg" alt="lana del rey">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Lana del Rey</h4>
@@ -207,7 +217,8 @@
                     <!-- song 2 -->
                     <div class="song">
                         <div class="song-img">
-                            <img class="circle" src="img/einaudi.jpeg" alt="ludovico einaudi">
+                            <img class="tondo" src="img/einaudi.jpeg" alt="ludovico einaudi">
+                            <i class="far fa-play-circle"></i>
                         </div>
                         <div class="song-text">
                             <h4>Ludovico Einaudi</h4>
@@ -219,15 +230,62 @@
         <!-- fine corpo -->
     </div>
 
-    <!-- footer -->
-    <footer>
-        <div class="row-footer">
-            <div class="left-footer"></div>
-            <div class="center-footer"></div>
-            <div class="right-footer"></div>
+     <!-- Footer -->
+     <footer class="flex">
+
+        <!-- Sinistra -->
+        <div class="col-lat flex" id="col-left">
+            <div class="now-playing flex">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="now-txt fx-col">
+                    <p class="now-title">Sinister</p>
+                    <p class="now-artist">Nome artista</p>
+                </div>
+                <div class="now-actions flex">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
         </div>
+        <!-- fine sinistra -->
+
+        <!-- Centrale -->
+        <div class="col-centrale flex fx-col">
+            <div class="player-cmd flex">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle play"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="progression flex">
+                <div class="time"><span>0:25</span></div>
+                <div class="progress-bar">
+                    <div class="loading"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="time"><span>4:35</span></div>
+            </div>
+        </div>
+        <!-- fine Centrale -->
+
+        <!-- Destra -->
+        <div class="col-lat flex" id="col-right">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-ellipsis-v responsive-more"></i>
+            <div class="progression flex">
+                <div class="progress-bar">
+                    <div class="loading"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Fine Destra -->
     </footer>
-    <!-- fine footer -->
+
 
 </body>
 </html>
