@@ -145,6 +145,11 @@ nav a:first-child {
     color: black;
     font-size: 25px;
     font-weight: 800;
+    transition: 1s;
+}
+
+.playlist a span:first-child:hover {
+    background-color: limegreen;
 }
 
 .new-playlist h4 {
@@ -188,8 +193,12 @@ nav a:first-child {
     height: 30px;
     width: 30px;
     border-radius: 50%;
+    transition: 2s;
 }
 
+.utente img:hover {
+    background-color: limegreen;
+}
 
 .download span {
     color: #a3a3a3;
@@ -322,6 +331,12 @@ h2 {
 
 .song-img img {
     width: 100%;
+    transition: 1s;
+}
+
+.song-img:hover img {
+    opacity: 0.5;
+    transform: scale(1.2);
 }
 
 .tondo {
@@ -352,10 +367,6 @@ h2 {
     font-size: 60px;
     display: none;
 } 
-
-.song-img:hover img {
-    opacity: 0.5;
-}
 
 .song-img:hover i {
     display: block;
