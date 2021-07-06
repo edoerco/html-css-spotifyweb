@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    min-width: 500px;
 }
 
 /* common */
@@ -35,14 +36,17 @@ footer {
     height: 100px;
     width: 100%;
     background-color: #282828;
-    position: fixed;
-    bottom: 0;
     justify-content: space-between;
 }
 
 .wrapper {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
+}
+
+.wrapper-up {
+    height: calc(100% - 100px);
+    width: 100%;
 }
 
 .flex {
@@ -81,9 +85,14 @@ footer {
     padding-left: 20px;
 }
 
-#logo img {
+#logo svg {
     width: 85%;
     margin-top: 20px;
+    color: limegreen;
+}
+
+#logo-mobile {
+    display: none;
 }
 /* fine logo */
 
@@ -214,6 +223,7 @@ aside span:hover {
     position: fixed;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
 .upgrade a {
@@ -518,13 +528,16 @@ footer .now-playing img {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     .song {
         width: calc(100% / 2 - 20px);
     }
-}
 
-@media screen and (max-width: 600px) {
+    footer .now-actions {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
     aside {
         width: 50px;
     }
@@ -532,6 +545,76 @@ footer .now-playing img {
     main {
         width: calc(100% - 50px);
     }
+
+    .upgrade {
+        width: calc(100% - 50px);
+    }
+
+    .row a {
+        padding-left: 3px;
+    }
+
+    nav span,
+    .playlist,
+    .account span,
+    .utente h4,
+    #logo svg,
+    hr {
+        display: none;
+    }
+    
+    #logo {
+        padding-left: 0;
+    } 
+
+    #logo svg {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #logo-mobile {
+        display: block;
+    }
+
+    .info {
+        align-items: center;
+    }
+
+    nav a:first-child {
+        border-left: 0;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .item {
+        margin: 5px 0;
+    }
+    
+    .row a {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .download {
+        width: 20px;
+        margin: 0 auto
+    }
+
+    .download img {
+        width: 100%;
+    }
+
+    .account {
+        justify-content: space-around;
+    }
+
+    .utente {
+        justify-content: center;
+    }
+   
 }
 
 /* fine Mediaqueary */
